@@ -6,24 +6,24 @@
 <title>LaunchRiot | Executive setup for busy directors</title>
 <meta name="description" content="A private assistant workspace for busy directors: email, calendar, messages, tasks and follow-ups in one place. Nothing is sent without your approval.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#f6f0e4">
+<meta name="theme-color" content="#101216">
 <link rel="icon" href="logo_full.png">
 <style>
-:root{--paper:#f6f0e4;--paper2:#efe6d4;--card:#fffaf1;--ink:#1f1a14;--muted:#5e5446;--line:#e0d4bd;--copper:#a5582a;--copper-dk:#8a4520;--dark:#101116}
+:root{--paper:#101216;--paper2:#1a1d23;--card:#171a20;--ink:#f1f4f2;--muted:#a8b1ad;--line:#2a2f37;--mint:#82e6ba;--mint-hi:#a6f0cf;--dark:#101216}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--copper-dk)}
+a{color:var(--mint)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.preview{background:#3a2a1a;color:#f6e7cf;font-size:13px;text-align:center;padding:6px 12px}
-header{background:var(--dark)}
+.preview{background:#1d3a2f;color:#d9f7ea;font-size:13px;text-align:center;padding:6px 12px}
+header{background:var(--dark);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
 header img{display:block;width:182px;height:auto}
-.btn{display:inline-block;background:var(--copper);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 26px;font-size:17px;line-height:1.2;transition:background .15s}
-.btn:hover,.btn:focus{background:var(--copper-dk)}
+.btn{display:inline-block;background:var(--mint);color:#101216;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 26px;font-size:17px;line-height:1.2;transition:background .15s}
+.btn:hover,.btn:focus{background:var(--mint-hi)}
 .btn.sm{padding:9px 16px;font-size:15px}
 .hero{padding:44px 0 28px}
-.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--copper-dk);font-weight:700;margin-bottom:12px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mint);font-weight:700;margin-bottom:12px}
 h1{font-size:clamp(32px,8vw,54px);line-height:1.08;letter-spacing:-.02em;margin-bottom:16px;font-weight:800}
 h2{font-size:clamp(26px,5.5vw,36px);line-height:1.15;letter-spacing:-.01em;margin-bottom:14px;font-weight:800}
 h3{font-size:18px;margin-bottom:4px}
@@ -32,30 +32,30 @@ h3{font-size:18px;margin-bottom:4px}
 .alt{font-size:15px;color:var(--muted)}
 .grid{display:grid;gap:28px}
 section{padding:40px 0;border-top:1px solid var(--line)}
-.sample{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 10px 30px rgba(60,40,10,.08)}
-.tag{display:inline-block;font-size:12px;font-weight:700;background:var(--paper2);color:var(--muted);border:1px dashed #c8b796;border-radius:6px;padding:3px 8px;margin-bottom:12px}
+.sample{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.tag{display:inline-block;font-size:12px;font-weight:700;background:var(--paper2);color:var(--muted);border:1px dashed #3d444e;border-radius:6px;padding:3px 8px;margin-bottom:12px}
 .row{display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.4}
 .row:first-of-type{border-top:0}
-.k{flex:0 0 76px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--copper-dk);padding-top:2px}
+.k{flex:0 0 76px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mint);padding-top:2px}
 .row small{display:block;color:var(--muted)}
-.pill{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px;background:#f3e1cf;color:var(--copper-dk)}
+.pill{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px;background:#1d3a2f;color:var(--mint)}
 .list{list-style:none;display:grid;gap:16px}
 .list li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .list p{color:var(--muted);font-size:16px}
 .steps{list-style:none;counter-reset:s;display:grid;gap:16px}
 .steps li{counter-increment:s;position:relative;padding-left:52px}
-.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--paper);font-weight:800;display:flex;align-items:center;justify-content:center}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--mint);color:#101216;font-weight:800;display:flex;align-items:center;justify-content:center}
 .steps p{color:var(--muted);font-size:16px}
 .checks{list-style:none;display:grid;gap:10px}
 .checks li{padding-left:30px;position:relative}
-.checks li:before{content:"";position:absolute;left:4px;top:7px;width:12px;height:7px;border-left:3px solid var(--copper);border-bottom:3px solid var(--copper);transform:rotate(-45deg)}
+.checks li:before{content:"";position:absolute;left:4px;top:7px;width:12px;height:7px;border-left:3px solid var(--mint);border-bottom:3px solid var(--mint);transform:rotate(-45deg)}
 details{border-top:1px solid var(--line);padding:14px 0}
 details:last-child{border-bottom:1px solid var(--line)}
 summary{cursor:pointer;font-weight:700;list-style-position:outside}
 details p{color:var(--muted);margin-top:8px;font-size:16px}
-.final{background:var(--ink);color:var(--paper);border-radius:20px;padding:32px 22px;text-align:center}
-.final p{color:#d9cdb8;margin-bottom:20px}
-.final .alt{color:#cbbda4}.final .alt a{color:#f0c9a6}
+.final{background:#16231e;border:1px solid #2f4a3e;color:var(--ink);border-radius:20px;padding:32px 22px;text-align:center}
+.final p{color:#c9d2ce;margin-bottom:20px}
+.final .alt{color:#b9c2be}.final .alt a{color:var(--mint)}
 footer{padding:28px 0 40px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
 footer nav{display:flex;gap:16px;flex-wrap:wrap}
