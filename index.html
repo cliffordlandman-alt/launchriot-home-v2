@@ -59,6 +59,17 @@ details p{color:var(--muted);margin-top:8px;font-size:16px}
 footer{padding:28px 0 40px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
 footer nav{display:flex;gap:16px;flex-wrap:wrap}
+.choose{padding:48px 0 40px;text-align:center}
+.choose h1{margin-bottom:10px}
+.choose .lead{margin:0 auto 28px}
+.opts{display:grid;gap:14px;text-align:left}
+.opt{display:block;width:100%;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px;cursor:pointer;text-align:left;transition:border-color .15s,transform .15s}
+.opt:hover,.opt:focus-visible{border-color:var(--mint);outline:none;transform:translateY(-2px)}
+.opt b{display:block;font-size:24px;color:var(--mint);margin-bottom:4px}
+.opt span{color:var(--muted);font-size:16px}
+.back{background:none;border:0;color:var(--mint);font:inherit;font-size:15px;cursor:pointer;padding:0 0 14px;text-decoration:underline}
+.final h2{margin-bottom:8px}
+@media(min-width:860px){.opts{grid-template-columns:1fr 1fr 1fr}.choose{padding:88px 0 72px}.opt{padding:30px 26px}}
 @media(min-width:860px){
  .hero{padding:72px 0 56px}
  .hero .grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}
@@ -74,101 +85,62 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap}
 <header>
  <div class="wrap">
   <a href="#top" aria-label="LaunchRiot home"><img src="logo_full.png" alt="LaunchRiot" width="242" height="64"></a>
-  <a class="btn sm" href="https://wa.me/971586444285?text=Hi%20LaunchRiot%2C%20I%27d%20like%20to%20book%20a%20demo%20of%20the%20executive%20setup.">Book a demo</a>
+  <a class="btn sm" id="hb" href="https://wa.me/971586444285?text=Hi%20LaunchRiot%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo</a>
  </div>
 </header>
 
-<main id="top">
-<div class="hero">
- <div class="wrap grid">
-  <div>
-   <p class="eyebrow">Executive setup</p>
-   <h1>Your email, calendar and messages in one calm place.</h1>
-   <p class="lead">LaunchRiot sets up a private assistant workspace for busy directors. It shows what needs you today, keeps track of tasks and follow-ups, and prepares draft replies. Nothing is sent until you approve it.</p>
-   <div class="cta">
-    <a class="btn" href="https://wa.me/971586444285?text=Hi%20LaunchRiot%2C%20I%27d%20like%20to%20book%20a%20demo%20of%20the%20executive%20setup.">Book a demo</a>
-    <span class="alt">or email <a href="mailto:hello@launchriot.online?subject=Book%20a%20demo%20-%20executive%20setup">hello@launchriot.online</a></span>
-   </div>
-  </div>
-  <div class="sample" aria-label="Sample screen with made-up content">
-   <span class="tag">Sample screen. Made-up example, not a real customer.</span>
-   <div class="row"><span class="k">Today</span><div>10:00 Leadership meeting<small>3 attendees</small></div></div>
-   <div class="row"><span class="k">Email</span><div>Board pack for Thursday<small>From: Finance team (sample) · marked important</small></div></div>
-   <div class="row"><span class="k">Message</span><div>“Can we move the site visit to Monday?”<small>From: Project lead (sample)</small></div></div>
-   <div class="row"><span class="k">Follow-up</span><div>Supplier contract sent, no reply for 3 days<small>Reminder kept for you</small></div></div>
-   <div class="row"><span class="k">Draft</span><div>Reply to the project lead: “Monday works. 9:30?”<span class="pill">Waiting for your approval</span></div></div>
-  </div>
- </div>
-</div>
-
-<section id="what">
- <div class="wrap">
-  <h2>What you get</h2>
-  <p class="lead">One private workspace, set up for you. It is live today and in daily use in a paying customer’s workspace.</p>
-  <ul class="list">
-   <li><h3>Email in one place</h3><p>Your inbox with the important messages at the top, so you see what matters first.</p></li>
-   <li><h3>Your calendar</h3><p>Today’s meetings and who is attending, in the same place as your mail.</p></li>
-   <li><h3>Chat messages</h3><p>Read your work chats alongside email, instead of switching between apps.</p></li>
-   <li><h3>Tasks and staff to-dos</h3><p>Capture a task in seconds and see what your team owes you.</p></li>
-   <li><h3>Follow-ups</h3><p>See the emails you sent that are still waiting for a reply.</p></li>
-   <li><h3>Drafts you approve</h3><p>Replies are prepared as drafts. You read, edit and decide. Nothing goes out on its own.</p></li>
-  </ul>
- </div>
-</section>
-
-<section id="how">
- <div class="wrap grid two">
-  <div>
-   <h2>How it works</h2>
-   <ol class="steps">
-    <li><h3>Book a demo</h3><p>A short call. We show you the workspace with sample content and listen to how you work.</p></li>
-    <li><h3>We set it up with you</h3><p>You choose what to connect. We do the setup together, step by step. It is a hands-on setup, not a self-serve app.</p></li>
-    <li><h3>You stay in charge</h3><p>Open your workspace, check what needs you, and approve the drafts you want to send.</p></li>
-   </ol>
-  </div>
-  <div>
-   <h2>You stay in control</h2>
-   <ul class="checks">
-    <li>Nothing is sent, deleted or changed without your approval.</li>
-    <li>You choose what to connect, and can disconnect at any time.</li>
-    <li>Your workspace is kept separate from every other customer.</li>
-    <li>You can export your data or ask us to delete it.</li>
-    <li>We do not sell your data or use it for advertising.</li>
-   </ul>
-  </div>
- </div>
-</section>
-
-<section id="faq">
- <div class="wrap">
-  <h2>Questions</h2>
-  <details><summary>Who is it for?</summary><p>Directors and business owners who live in their inbox, calendar and chats, and want one place to see what needs them.</p></details>
-  <details><summary>Will it send messages for me?</summary><p>No. It prepares drafts. You approve each one before anything is sent.</p></details>
-  <details><summary>Which email accounts can I connect?</summary><p>Tell us what you use when you book a demo and we will confirm, before any setup, whether we can connect it.</p></details>
-  <details><summary>How much does it cost?</summary><p>We agree the scope with you on the demo call and confirm everything in writing before any work starts.</p></details>
-  <details><summary>Who runs it?</summary><p>LaunchRiot. We set it up, look after it and are your single point of contact.</p></details>
- </div>
-</section>
-
-<section>
- <div class="wrap">
-  <div class="final">
-   <h2>See it working before you decide.</h2>
-   <p>Book a short demo. No commitment.</p>
-   <div class="cta" style="justify-content:center">
-    <a class="btn" href="https://wa.me/971586444285?text=Hi%20LaunchRiot%2C%20I%27d%20like%20to%20book%20a%20demo%20of%20the%20executive%20setup.">Book a demo</a>
-    <span class="alt">or email <a href="mailto:hello@launchriot.online?subject=Book%20a%20demo%20-%20executive%20setup">hello@launchriot.online</a></span>
-   </div>
-  </div>
- </div>
-</section>
+<main id="top"><div id="app"></div>
+<noscript><div class="wrap" style="padding:40px 20px"><p class="lead">LaunchRiot: a private assistant workspace for your email, calendar, chat messages and tasks. Nothing is sent without your approval. Email <a href="mailto:hello@launchriot.online">hello@launchriot.online</a> to book a demo.</p></div></noscript>
 </main>
-
 <footer>
  <div class="wrap">
   <span>© 2026 LaunchRiot · Founded by Clifford Landman</span>
   <nav><a href="terms.html">Terms (draft)</a><a href="privacy.html">Privacy (draft)</a><a href="mailto:hello@launchriot.online">hello@launchriot.online</a></nav>
  </div>
 </footer>
+<script>
+(function(){
+var P={
+executive:{label:"Executive",pick:"For directors and senior leaders who want to see what needs them today.",
+ h:"Your email, calendar and messages in one calm place.",
+ lead:"A private assistant workspace that shows what needs you today, keeps track of tasks and follow-ups, and prepares draft replies. Nothing is sent until you approve it.",
+ sample:[["Today","10:00 Leadership meeting","3 attendees"],["Email","Board pack for Thursday","From: Finance team (sample) · marked important"],["Message","\u201cCan we move the site visit to Monday?\u201d","From: Project lead (sample)"],["Follow-up","Supplier contract sent, no reply for 3 days","Reminder kept for you"]],
+ draft:"Reply to the project lead: \u201cMonday works. 9:30?\u201d"},
+business:{label:"Business",pick:"For owners and managers who run a team and need to keep everything moving.",
+ h:"Run your day and your team from one place.",
+ lead:"See your inbox, calendar and work chats together, capture tasks in seconds and see what your team owes you. Replies are prepared as drafts for you to approve.",
+ sample:[["Today","14:00 Supplier call","2 attendees"],["Email","Quote request from a new customer (sample)","Marked important"],["Message","\u201cDelivery is confirmed for Wednesday.\u201d","From: Operations (sample)"],["Task","Send updated product list","Owed by: Team member (sample) · due Friday"]],
+ draft:"Reply to the customer: \u201cThanks, the quote will be with you today.\u201d"},
+personal:{label:"Personal",pick:"For anyone who wants their own email, plans and to-dos in order.",
+ h:"Keep your own email, plans and to-dos in order.",
+ lead:"One private place for your inbox, calendar and messages, with simple reminders for the things you need to follow up. Replies are prepared as drafts and nothing is sent without your approval.",
+ sample:[["Today","18:30 Dinner with family","Calendar"],["Email","Appointment confirmation (sample)","From: Clinic (sample)"],["Message","\u201cAre we still on for Saturday?\u201d","From: Friend (sample)"],["Follow-up","Asked the school about forms, no reply yet","Reminder kept for you"]],
+ draft:"Reply to your friend: \u201cYes, Saturday works.\u201d"}
+};
+var F=[["Email in one place","Your inbox with the important messages at the top, so you see what matters first."],["Your calendar","Today\u2019s meetings and who is attending, in the same place as your mail."],["Chat messages","Read your chats alongside email, instead of switching between apps."],["Tasks and follow-ups","Capture a task in seconds and see the emails still waiting for a reply."],["Drafts you approve","Replies are prepared as drafts. You read, edit and decide. Nothing goes out on its own."]];
+var app=document.getElementById("app");
+function esc(t){return t.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function cta(k){var l=k?P[k].label.toLowerCase():"";var txt=k?"Hi LaunchRiot, I'd like to book a demo of the "+l+" setup.":"Hi LaunchRiot, I'd like to book a demo.";
+ return '<a class="btn" href="https://wa.me/971586444285?text='+encodeURIComponent(txt)+'">Book a demo</a><span class="alt">or email <a href="mailto:hello@launchriot.online?subject='+encodeURIComponent("Book a demo"+(k?" - "+l+" setup":""))+'">hello@launchriot.online</a></span>';}
+function chooser(){
+ var o="";for(var k in P)o+='<button class="opt" type="button" data-k="'+k+'"><b>'+P[k].label+'</b><span>'+P[k].pick+'</span></button>';
+ app.innerHTML='<div class="choose"><div class="wrap"><p class="eyebrow">LaunchRiot</p><h1>Who is this for?</h1><p class="lead">Choose the one that fits you best and we will show you what it looks like.</p><div class="opts">'+o+'</div></div></div>';
+}
+function path(k){var p=P[k],r="";
+ p.sample.forEach(function(x){r+='<div class="row"><span class="k">'+x[0]+'</span><div>'+esc(x[1])+'<small>'+esc(x[2])+'</small></div></div>'});
+ r+='<div class="row"><span class="k">Draft</span><div>'+esc(p.draft)+'<span class="pill">Waiting for your approval</span></div></div>';
+ var f="";F.forEach(function(x){f+='<li><h3>'+x[0]+'</h3><p>'+x[1]+'</p></li>'});
+ app.innerHTML='<div class="hero"><div class="wrap"><button class="back" type="button" data-k="">\u2190 Change choice</button><div class="grid"><div><p class="eyebrow">'+p.label+'</p><h1>'+p.h+'</h1><p class="lead">'+p.lead+'</p><div class="cta">'+cta(k)+'</div></div><div class="sample" aria-label="Sample screen with made-up content"><span class="tag">Sample screen. Made-up example, not a real customer.</span>'+r+'</div></div></div></div>'
+ +'<section><div class="wrap"><h2>What you get</h2><ul class="list">'+f+'</ul></div></section>'
+ +'<section><div class="wrap grid two"><div><h2>How it works</h2><ol class="steps"><li><h3>Book a demo</h3><p>A short call. We show you the workspace with sample content and listen to how you work.</p></li><li><h3>We set it up with you</h3><p>You choose what to connect. We do the setup together, step by step.</p></li><li><h3>You stay in charge</h3><p>Check what needs you and approve the drafts you want to send.</p></li></ol></div><div><h2>You stay in control</h2><ul class="checks"><li>Nothing is sent, deleted or changed without your approval.</li><li>You choose what to connect, and can disconnect at any time.</li><li>We do not sell your data or use it for advertising.</li></ul></div></div></section>'
+ +'<section><div class="wrap"><div class="final"><h2>See it working before you decide.</h2><p>Book a short demo. No commitment.</p><div class="cta" style="justify-content:center">'+cta(k)+'</div></div></div></section>';
+}
+function render(){var k=location.hash.replace("#","");if(P[k])path(k);else chooser();window.scrollTo(0,0);document.getElementById("hb").href="https://wa.me/971586444285?text="+encodeURIComponent(P[k]?"Hi LaunchRiot, I'd like to book a demo of the "+P[k].label.toLowerCase()+" setup.":"Hi LaunchRiot, I'd like to book a demo.");
+ var t=document.title.split(" | ")[0];document.title="LaunchRiot"+(P[k]?" | "+P[k].label:" | Who is this for?");}
+app.addEventListener("click",function(e){var b=e.target.closest("[data-k]");if(!b)return;var k=b.getAttribute("data-k");
+ if(k){location.hash=k}else{location.hash=""}});
+window.addEventListener("hashchange",render);render();
+})();
+</script>
 </body>
 </html>
